@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Touché</title>
+    <link rel="stylesheet" href="touche.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <section>
+      <h1>Touché</h1>
+      <p>A small event library that tries to smooth the transition of programming for a touch interface.
+Some events are necessary, and some needs to be routed elsewhere. This is my attempt.</p>
+    <h2>About you</h2>
+    <p>You are on <span id="browser"></span></p>
+    <h2>Examples</h2>
+    <ul id="sorting">
+      <li>List item 1</li>
+      <li>List item 2</li>
+      <li>List item 3</li>
+      <li>List item 4</li>
+      <li>List item 5</li>
+    </ul>
+    
+    <button id="hover">Hover</button>      
+    
+    </section>
+    <aside></aside>
+    <footer>Touché</footer>
+    <script src="touche.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript" charset="utf-8">
+      document.getElementById('hover').onmouseover = function(){
+        this.innerHTML = 'hello';
+      };
+      document.getElementById('hover').onmouseout = function(){
+        this.innerHTML = 'hover';
+      };
+
+    </script>
+  </body>
+</html>
